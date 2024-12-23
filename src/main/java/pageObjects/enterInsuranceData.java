@@ -36,10 +36,6 @@ public class enterInsuranceData extends TestBase{
   enterInsuranceData() {
 	 PageFactory.initElements(driver, this);
  }
-	//@FindBy(id="nextenterproductdata")
-	// WebElement btn_next;
-//  enterInsuranceData() {
-//	 PageFactory.initElements(driver, this);
-// }
+
 
 }
