@@ -33,7 +33,7 @@ public class enterInsuranceData extends TestBase{
 	List <WebElement> chk_hobbiesElements;
 	@FindBy(id="nextenterproductdata")
 	WebElement btn_next;
-//  enterInsuranceData() {
-//	 PageFactory.initElements(driver, this);
-// }
+  enterInsuranceData() {
+	 PageFactory.initElements(driver, this);
+ }
 }
