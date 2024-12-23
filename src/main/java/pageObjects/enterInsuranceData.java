@@ -31,8 +31,8 @@ public class enterInsuranceData extends TestBase{
 	WebElement btn_PictureOpenButton;
 	@FindBy(xpath = "//input[@name='Hobbies']/parent::label")
 	List <WebElement> chk_hobbiesElements;
-	@FindBy(id="nextenterproductdata")
-	WebElement btn_next;
+	//@FindBy(id="nextenterproductdata")
+	// WebElement btn_next;
 //  enterInsuranceData() {
 //	 PageFactory.initElements(driver, this);
 // }
