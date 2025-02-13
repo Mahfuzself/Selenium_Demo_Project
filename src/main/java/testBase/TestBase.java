@@ -10,8 +10,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pageObjects.enterVehicleData;
-import pageObjects.homePage;
+import pageObjects.SignUp;
+import pageObjects.TopProductDropdown;
 import reusableComponents.propertiesOperations;
 
 public class TestBase extends ObjectsRepo{
@@ -35,14 +35,14 @@ public class TestBase extends ObjectsRepo{
 		   driver.manage().window().maximize();
 		   driver.get(url);
 	}
-	
-	@BeforeMethod
-	public void setupMethod() throws Exception {
-		LunchBrowserAndNavigate();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
-		home = new homePage();
-		vehecalData = new enterVehicleData();
-	}
+//	
+//	@BeforeMethod
+//	public void setupMethod() throws Exception {
+//		LunchBrowserAndNavigate();
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+//		home = new TopProductDropdown();
+//		vehecalData = new SignUp();
+//	}
 	@AfterMethod
 	public void clearup() {
 		driver.quit();
