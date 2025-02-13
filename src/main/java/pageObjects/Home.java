@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import testBase.TestBase;
 
-public class Home extends TestBase{
+public class enterInsuranceData extends TestBase{
 	@FindBy(id="firstname")
 	WebElement txt_firstname;
 	@FindBy(id="lastname")
@@ -33,13 +33,10 @@ public class Home extends TestBase{
 	List <WebElement> chk_hobbiesElements;
 	@FindBy(id="nextenterproductdata")
 	WebElement btn_next;
-  Home() {
+  enterInsuranceData() {
 	 PageFactory.initElements(driver, this);
+	 
  }
-	//@FindBy(id="nextenterproductdata")
-	// WebElement btn_next;
-//  enterInsuranceData() {
-//	 PageFactory.initElements(driver, this);
-// }
+
 
 }
