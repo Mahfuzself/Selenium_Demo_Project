@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="InsuranceCalculator_Motorcycle.ErrorTests_Motorcycle">
+      <class name="loginTest">
         <methods>
           <include name="clearup"/>
-          <include name="errorMessage_PayloadField1"/>
+          <include name="successfullyLogin"/>
           <include name="setupMethod"/>
-          <include name="errorMessage_PayloadField"/>
         </methods>
-      </class> <!-- InsuranceCalculator_Motorcycle.ErrorTests_Motorcycle -->
+      </class> <!-- loginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
