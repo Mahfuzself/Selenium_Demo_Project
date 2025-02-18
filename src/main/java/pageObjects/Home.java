@@ -44,6 +44,11 @@ public class Home extends TestBase{
 	WebElement FAQ;
 	@FindBy( xpath = "(//button[contains(@class,'dnn-btn dnn-btn__primary')])[1]")
 	WebElement Treatment;
+	@FindBy( xpath = "(//a[@class='nav-link cart'])[2]")
+	WebElement Cart;
+	@FindBy( xpath = " (//span[text()=\" Add to Cart \"])[1]")
+	WebElement ADDToCart;
+	
   public Home() {
 	 PageFactory.initElements(driver, this);
 	 
@@ -69,6 +74,7 @@ public class Home extends TestBase{
 			// TODO: handle exception
 		}
 		  driver.navigate().back();
+		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 		  
 		
 	}
@@ -81,6 +87,7 @@ public class Home extends TestBase{
 			// TODO: handle exception
 		}
 		  driver.navigate().back();
+		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 		  
 		
 	}
@@ -93,17 +100,39 @@ public class Home extends TestBase{
 			// TODO: handle exception
 		}
 		  driver.navigate().back();
-		  
+		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 	}
 	  public void ClickFindMyTreatment() {
 		  try {
              Treatment.click();
-			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40000));
+			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(400));
 		} catch (Exception e) {
 			System.out.println("Find My Treatment is not functional");
 			// TODO: handle exception
 		}
 		  driver.navigate().back();
+		  
+	}
+	  public void ClickCart() {
+		  try {
+             Cart.click();
+			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40000));
+		} catch (Exception e) {
+			System.out.println("Cart is not functional");
+			// TODO: handle exception
+		}
+//		  driver.navigate().back();
+		  
+	}
+	  public void ClickAddToCart() {
+		  try {
+             ADDToCart.click();
+			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40000));
+		} catch (Exception e) {
+			System.out.println("Add To Cart is not functional");
+			// TODO: handle exception
+		}
+		 //driver.navigate().back();
 		  
 	}
 }

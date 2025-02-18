@@ -20,6 +20,7 @@ public class ObjectsRepo {
 	  public static Home home;
 	  public static Login logIn;
 	  public static CategoryDropdown category;
+	  
 	 // public static SignUp vehecalData;
 	  
 }

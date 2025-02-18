@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-17T15:16:21 BDT" name="Default suite" finished-at="2025-02-17T15:16:57 BDT" duration-ms="35973">
+  <suite started-at="2025-02-18T16:17:54 BDT" name="Default suite" finished-at="2025-02-18T16:21:35 BDT" duration-ms="221272">
     <groups>
     </groups>
-    <test started-at="2025-02-17T15:16:21 BDT" name="Default test" finished-at="2025-02-17T15:16:57 BDT" duration-ms="35973">
+    <test started-at="2025-02-18T16:17:54 BDT" name="Default test" finished-at="2025-02-18T16:21:35 BDT" duration-ms="221272">
       <class name="HomepageTest">
-        <test-method is-config="true" signature="setupMethod()[pri:0, instance:HomepageTest@645aa696]" started-at="2025-02-17T15:16:21 BDT" name="setupMethod" finished-at="2025-02-17T15:16:50 BDT" duration-ms="29042" status="PASS">
+        <test-method is-config="true" signature="setupMethod()[pri:0, instance:HomepageTest@645aa696]" started-at="2025-02-18T16:17:54 BDT" name="setupMethod" finished-at="2025-02-18T16:18:04 BDT" duration-ms="10105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMethod -->
-        <test-method signature="NavigateHomePage()[pri:0, instance:HomepageTest@645aa696]" started-at="2025-02-17T15:16:50 BDT" name="NavigateHomePage" finished-at="2025-02-17T15:16:57 BDT" duration-ms="6509" status="PASS">
+        <test-method signature="NavigateHomePage()[pri:0, instance:HomepageTest@645aa696]" started-at="2025-02-18T16:18:04 BDT" name="NavigateHomePage" finished-at="2025-02-18T16:21:04 BDT" duration-ms="180094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateHomePage -->
-        <test-method is-config="true" signature="clearup()[pri:0, instance:HomepageTest@645aa696]" started-at="2025-02-17T15:16:57 BDT" name="clearup" finished-at="2025-02-17T15:16:57 BDT" duration-ms="390" status="PASS">
+        <test-method is-config="true" signature="clearup()[pri:0, instance:HomepageTest@645aa696]" started-at="2025-02-18T16:21:04 BDT" name="clearup" finished-at="2025-02-18T16:21:35 BDT" duration-ms="31044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearup -->

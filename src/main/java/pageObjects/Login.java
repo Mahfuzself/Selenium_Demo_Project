@@ -48,7 +48,6 @@ public class Login  extends TestBase{
  }
  public void clickLogin() {
 		LoginBtn.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	 }
  
 

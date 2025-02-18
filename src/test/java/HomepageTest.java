@@ -8,11 +8,13 @@ public class HomepageTest extends TestBase{
 
 	@Test
 	public void NavigateHomePage() {
-		home.NavigateSignUp();
-		home.NavigateLogIn();
-		home.NavigateContactUs();
-		home.NavigateFAQ();
-		home.ClickFindMyTreatment();
+//		home.NavigateSignUp();
+//		home.NavigateLogIn();
+//		home.NavigateContactUs();
+//		home.NavigateFAQ();
+//		home.ClickFindMyTreatment();
+		home.ClickAddToCart();
+		home.ClickCart();
 	}
 
 }
