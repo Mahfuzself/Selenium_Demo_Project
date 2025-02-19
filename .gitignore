@@ -16,3 +16,4 @@ target/
 
 # Ignore CSS files
 *.css
+test-output/
