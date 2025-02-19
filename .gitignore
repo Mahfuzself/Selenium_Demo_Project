@@ -11,3 +11,8 @@ target/
 *.classpath
 *.project
 *.settings/
+# Ignore HTML files
+*.html
+
+# Ignore CSS files
+*.css
