@@ -45,6 +45,16 @@
 		    <artifactId>extentreports</artifactId>
 		    <version>5.1.2</version>
 		</dependency>
+		  <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>okhttp</artifactId>
+        <version>4.9.0</version> <!-- You may need this for HTTP requests -->
+    </dependency>
+    <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20210307</version> <!-- Latest version of org.json -->
+    </dependency>
 	
 	
 		
