@@ -23,7 +23,7 @@ public class Login  extends TestBase{
 	
 	
 	
- public	Login  () throws Exception{
+ public	Login  (){
 		PageFactory.initElements(driver, this);
 	}
  public void clickLoginBtn() {
