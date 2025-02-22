@@ -9,8 +9,11 @@ import okhttp3.Response;
 import testBase.TestBase;
 
 public class FakeNameGenerator extends TestBase{
-	public FakeNameGenerator() {
+	public static	String firstName = "";
+	public static	String lastName = "";
+	public  FakeNameGenerator() {
 		PageFactory.initElements(driver, this);
+		
 	}
 
 
@@ -22,10 +25,11 @@ public class FakeNameGenerator extends TestBase{
 //        driver.get("https://rizzpharma.thrivewellrx.com/Register?returnurl=");
 
         // Get fake name (first name, last name) from RandomUser.me API\
-	public static void main(String[] args) {
-		String firstName = "";
-		String lastName = "";
+	
 		
+	
+	
+	public  static void fetchFakeName() {	
 	
         
         
@@ -48,13 +52,15 @@ public class FakeNameGenerator extends TestBase{
             firstName = name.getString("first");
             lastName = name.getString("last");
 
-            System.out.println("Generated Name: " + firstName + " " + lastName);
+//            System.out.println("Generated Name: " + firstName + " " + lastName);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-    
+        
+	}
 }
 
-}
+
+
+
 

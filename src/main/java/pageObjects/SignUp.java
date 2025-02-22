@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import testBase.TestBase;
 
 public class SignUp extends TestBase{
+	
 	@FindBy(xpath = "//input[@data-gtm-form-interact-field-id='0']")
 	WebElement user_email;
 	@FindBy(xpath ="(//input[@class='dnnFormInput'])[1]")
@@ -31,27 +32,33 @@ public class SignUp extends TestBase{
 	
 	@FindBy(id = "#dnn_ctr_Register_registerButton")
 	WebElement register;
+	fakename.fetchFakeName();
 	
 	public SignUp() {
 		 PageFactory.initElements(driver, this);	 
 	 }
-	public  void inputCylenderCapacity() {
-		txt_cylendercapacity.sendKeys("5000");
-		System.out.println("Test1");
+	
+	
+	public void InputFirstName() {
+	
+		String firstname = fakename.firstName;
+		First_Name.sendKeys(firstname);
+		
 	}
-	public String AssertCylenderCapacityErrorMessage() {
-		return cylender_capacity_Error.getText();
-	}
-	public void ClickRetreat() throws InterruptedException {
-		link_mensRetreat.click();
-		Thread.sleep(1000);
-	}
-	public void ClickBook() {
-		new Actions(driver).moveToElement(book).perform();  
-
-        //Step 2
-//        el.Click();
-		book.click();
-	}
+	public void InputLastName() {
+		fakename.fetchFakeName();
+			String lastname = fakename.lastName;
+			Last_Name.sendKeys(lastname);
+			
+		}
+	public void InputEmail() {
+		fakename.fetchFakeName();
+			String lastname = fakename.lastName;
+			String firstname = fakename.firstName;
+			String email = firstname+lastname+"@yopmail.com";
+			user_email.sendKeys(email);
+			System.out.println(email);
+			
+		}
 
 }

@@ -71,7 +71,7 @@ public class Home extends TestBase{
 //			  waitForPageToLoad();
 //			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 //			  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			  driver.navigate().back();
+//			  driver.navigate().back();
 		} catch (Exception e) {
 			System.out.println("SignUp is not navigated");
 			// TODO: handle exception

@@ -6,6 +6,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
 import pageObjects.CategoryDropdown;
+import pageObjects.FakeNameGenerator;
 import pageObjects.Home;
 import pageObjects.Login;
 import pageObjects.SignUp;
