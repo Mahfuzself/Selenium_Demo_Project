@@ -12,6 +12,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageObjects.FakeNameGenerator;
 import pageObjects.Home;
 import pageObjects.Login;
 import pageObjects.SignUp;
@@ -56,6 +57,8 @@ public class TestBase extends ObjectsRepo{
 //		home = new TopProductDropdown();
 		 logIn = new Login();
 		 home = new Home();
+		 fakename = new FakeNameGenerator();
+		 signUp = new SignUp();
 //		vehecalData = new SignUp();
 	}
 	@AfterMethod
