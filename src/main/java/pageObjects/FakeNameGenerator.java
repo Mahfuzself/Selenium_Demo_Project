@@ -9,8 +9,8 @@ import okhttp3.Response;
 import testBase.TestBase;
 
 public class FakeNameGenerator extends TestBase{
-	public static	String firstName = "";
-	public static	String lastName = "";
+	public	String firstName = "";
+	public 	String lastName = "";
 	public  FakeNameGenerator() {
 		PageFactory.initElements(driver, this);
 		
@@ -29,7 +29,7 @@ public class FakeNameGenerator extends TestBase{
 		
 	
 	
-	public  static void fetchFakeName() {	
+	public void fetchFakeName() {	
 	
         
         
