@@ -22,6 +22,7 @@ public class ObjectsRepo {
 	  public static Login logIn;
 	  public static CategoryDropdown category;
 	  public static FakeNameGenerator fakename;
+//	  public static TestBase testbase;
 	  
 	 // public static SignUp vehecalData;
 	  

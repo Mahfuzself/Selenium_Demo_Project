@@ -15,7 +15,7 @@ public class SignUp extends TestBase{
 	WebElement First_Name;
 	@FindBy(xpath  ="(//input[@class='dnnFormInput'])[2]")
 	WebElement Last_Name;
-	@FindBy(xpath = "input[aria-label='DisplayName']")
+	@FindBy(id = "div#dnn_ctr_Register_userForm>div:nth-of-type(4)>input")
 	WebElement display_Name;
 	@FindBy(xpath = "(//input[@class='dnnFormInput'])[3]")
 	WebElement Phone_Number;
@@ -58,11 +58,13 @@ public class SignUp extends TestBase{
 //			String lastname = fakename.lastName;
 //			String firstname = fakename.firstName;
 			String email = firstname+lastname+"@yopmail.com";
+			user_email.click();
 			user_email.sendKeys(email);
 			System.out.println(email);
 			
 		}
 	public void InputdisplayName(String firstname,String lastname) {
+		display_Name.click();
 		display_Name.sendKeys(firstname+lastname);
 	}
 	public void InputPhoneNumber() {

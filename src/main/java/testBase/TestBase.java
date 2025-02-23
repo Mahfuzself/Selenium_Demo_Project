@@ -1,13 +1,12 @@
 package testBase;
 
-import java.security.PublicKey;
 import java.time.Duration;
-import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.FindBy;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -16,7 +15,6 @@ import pageObjects.FakeNameGenerator;
 import pageObjects.Home;
 import pageObjects.Login;
 import pageObjects.SignUp;
-import pageObjects.TopProductDropdown;
 import reusableComponents.propertiesOperations;
 
 public class TestBase extends ObjectsRepo{
@@ -50,6 +48,12 @@ public class TestBase extends ObjectsRepo{
 //	        return name;
 //	    }
 //	
+	@FindBy(xpath = "//button[@class=\"btn-close\"]")
+	WebElement closeCoupon;
+	public void closeCouponPopup() throws InterruptedException {
+		Thread.sleep(2000);
+		closeCoupon.click();
+	}
 	@BeforeMethod
 	public void setupMethod() throws Exception {
 		LunchBrowserAndNavigate();
