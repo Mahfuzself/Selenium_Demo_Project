@@ -4,7 +4,8 @@ import testBase.TestBase;
 
 public class SignUpTest extends TestBase{
    @Test
-   public void Signup() {
+   public void Signup() throws InterruptedException {
+	   closeCouponPopup();
 	   fakename.fetchFakeName();
 	   String firstname = fakename.firstName;
 	   String lastname = fakename.lastName;
@@ -12,7 +13,7 @@ public class SignUpTest extends TestBase{
 	   signUp.InputEmail(firstname,lastname);
 	   signUp.InputFirstName(firstname);
 	   signUp.InputLastName(lastname);
-	   signUp.InputdisplayName(firstname, lastname);
+	   signUp.InputdisplayName(firstname,lastname);
 	   signUp.InputPhoneNumber();
 	   signUp.EnterdateofBirth();
 	   signUp.InputPassword();
