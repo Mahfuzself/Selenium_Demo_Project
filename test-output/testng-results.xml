@@ -2,24 +2,56 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-22T21:14:10 BDT" name="Default suite" finished-at="2025-02-22T21:16:08 BDT" duration-ms="117224">
+  <suite started-at="2025-02-24T09:38:13 BDT" name="Default suite" finished-at="2025-02-24T09:38:34 BDT" duration-ms="20765">
     <groups>
     </groups>
-    <test started-at="2025-02-22T21:14:10 BDT" name="Default test" finished-at="2025-02-22T21:16:08 BDT" duration-ms="117224">
+    <test started-at="2025-02-24T09:38:13 BDT" name="Default test" finished-at="2025-02-24T09:38:34 BDT" duration-ms="20765">
       <class name="SignUpTest">
-        <test-method is-config="true" signature="setupMethod()[pri:0, instance:SignUpTest@402c4085]" started-at="2025-02-22T21:14:10 BDT" name="setupMethod" finished-at="2025-02-22T21:16:05 BDT" duration-ms="114782" status="PASS">
+        <test-method is-config="true" signature="setupMethod()[pri:0, instance:SignUpTest@402c4085]" started-at="2025-02-24T09:38:13 BDT" name="setupMethod" finished-at="2025-02-24T09:38:28 BDT" duration-ms="15679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMethod -->
-        <test-method signature="Signup()[pri:0, instance:SignUpTest@402c4085]" started-at="2025-02-22T21:16:05 BDT" name="Signup" finished-at="2025-02-22T21:16:07 BDT" duration-ms="2015" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="Signup()[pri:0, instance:SignUpTest@402c4085]" started-at="2025-02-24T09:38:28 BDT" name="Signup" finished-at="2025-02-24T09:38:33 BDT" duration-ms="4599" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.click()" because "this.closeCoupon" is null]]>
+              <![CDATA[element click intercepted: Element <input name="dnn$ctr$Register$userForm$288221f89edc71656f583336bab4e09c$288221f89edc71656f583336bab4e09c_TextBox" type="password" maxlength="39" id="dnn_ctr_Register_userForm_288221f89edc71656f583336bab4e09c_288221f89edc71656f583336bab4e09c_TextBox" class="password-strength" autocomplete="off" aria-label="Password" style="margin-bottom: 0px; padding-right: 45px;"> is not clickable at point (759, 386). Other element would receive the click: <div id="dnn_ctr_Register_userForm_8b1c39830ef8ebf1ab93a5a8c741d81d" class="dnnFormItem dnnFormShort">...</div>
+  (Session info: chrome=124.0.6367.61)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c80b29834f8e32ea7785e217957a82f, clickElement {id=f.88A17CDE6B5572383B3ECA4712E33378.d.ECAAA701F18182AAA784A24DDA47ADC0.e.79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61423/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1c80b29834f8e32ea7785e217957a82f)] -> xpath: //input[@aria-label='Password']]
+Session ID: 1c80b29834f8e32ea7785e217957a82f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.click()" because "this.closeCoupon" is null
-at testBase.TestBase.closeCouponPopup(TestBase.java:55)
-at SignUpTest.Signup(SignUpTest.java:8)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input name="dnn$ctr$Register$userForm$288221f89edc71656f583336bab4e09c$288221f89edc71656f583336bab4e09c_TextBox" type="password" maxlength="39" id="dnn_ctr_Register_userForm_288221f89edc71656f583336bab4e09c_288221f89edc71656f583336bab4e09c_TextBox" class="password-strength" autocomplete="off" aria-label="Password" style="margin-bottom: 0px; padding-right: 45px;"> is not clickable at point (759, 386). Other element would receive the click: <div id="dnn_ctr_Register_userForm_8b1c39830ef8ebf1ab93a5a8c741d81d" class="dnnFormItem dnnFormShort">...</div>
+  (Session info: chrome=124.0.6367.61)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c80b29834f8e32ea7785e217957a82f, clickElement {id=f.88A17CDE6B5572383B3ECA4712E33378.d.ECAAA701F18182AAA784A24DDA47ADC0.e.79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61423}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61423/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1c80b29834f8e32ea7785e217957a82f)] -> xpath: //input[@aria-label='Password']]
+Session ID: 1c80b29834f8e32ea7785e217957a82f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at pageObjects.SignUp.InputPassword(SignUp.java:75)
+at SignUpTest.Signup(SignUpTest.java:19)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -48,11 +80,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Signup -->
-        <test-method is-config="true" signature="clearup()[pri:0, instance:SignUpTest@402c4085]" started-at="2025-02-22T21:16:07 BDT" name="clearup" finished-at="2025-02-22T21:16:08 BDT" duration-ms="397" status="PASS">
+        <test-method is-config="true" signature="clearup()[pri:0, instance:SignUpTest@402c4085]" started-at="2025-02-24T09:38:33 BDT" name="clearup" finished-at="2025-02-24T09:38:34 BDT" duration-ms="438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearup -->

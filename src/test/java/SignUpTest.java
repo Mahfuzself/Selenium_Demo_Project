@@ -5,7 +5,7 @@ import testBase.TestBase;
 public class SignUpTest extends TestBase{
    @Test
    public void Signup() throws InterruptedException {
-	   closeCouponPopup();
+//	   closeCouponPopup();
 	   fakename.fetchFakeName();
 	   String firstname = fakename.firstName;
 	   String lastname = fakename.lastName;
