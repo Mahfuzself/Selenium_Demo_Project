@@ -15,17 +15,17 @@ public class SignUp extends TestBase{
 	WebElement First_Name;
 	@FindBy(xpath  ="(//input[@class='dnnFormInput'])[2]")
 	WebElement Last_Name;
-	@FindBy(id = "div#dnn_ctr_Register_userForm>div:nth-of-type(4)>input")
+	@FindBy(xpath  = "//input[@aria-label='DisplayName']")
 	WebElement display_Name;
-	@FindBy(xpath = "(//input[@class='dnnFormInput'])[3]")
+	@FindBy(xpath = "//input[@inputmode='text']")
 	WebElement Phone_Number;
-	@FindBy(xpath  = "//input[@aria-label='Use the arrow keys to pick a date']")
+	@FindBy(xpath  = "(//label[contains(.,'Date of birth')]/following::input)[1]")
 	WebElement date_of_birth;
 	@FindBy(id = "listprice")
 	WebElement txt_listprice;
-	@FindBy(xpath = "//input[@class='password-strength validate-success']")
+	@FindBy(xpath = "//input[@aria-label='Password']")
 	WebElement password;
-	@FindBy(xpath ="//input[@class='password-confirm unmatched']")
+	@FindBy(xpath ="//input[@aria-label='PasswordConfirm']")
 	WebElement Confirm_Password;
 	@FindBy(xpath = "//a[contains(@class,'btn btn-secondary')]") WebElement book;
 	@FindBy (xpath = "(//img[@alt='muslim-couple-retreat'])[2]") WebElement link_mensRetreat;
@@ -65,15 +65,18 @@ public class SignUp extends TestBase{
 		}
 	public void InputdisplayName(String firstname,String lastname) {
 		display_Name.click();
-		display_Name.sendKeys(firstname+lastname);
+		display_Name.sendKeys((firstname+lastname));
 	}
 	public void InputPhoneNumber() {
+		Phone_Number.click();
 		Phone_Number.sendKeys("4133248551");
 	}
 	public void InputPassword() {
+		password.click();
 	   password.sendKeys("Test@1234");
 	}
 	public void InputConfirmPassword() {
+		    Confirm_Password.click();
 		   Confirm_Password.sendKeys("Test@1234");
 		}
 	public void EnterRegister() {
